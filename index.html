@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume-chatbot">Resume Chatbot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="introduction">
+        <div class="intro-content">
+            <h1>Hi, I'm Sushil Raj 👋</h1>
+            <h2>Computer Science Undergraduate | IIT Bhilai</h2>
+            <p>
+                Passionate about problem-solving, full-stack development, and AI-driven applications.
+                I specialize in designing efficient algorithms, exploring advanced networking concepts,
+                and developing innovative tech solutions that make a real-world impact.
+            </p>
+            <p>
+                Always eager to learn and collaborate, I strive to push boundaries in technology,
+                building solutions that enhance efficiency and drive innovation.
+            </p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-alt">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>C++, Python, JavaScript, SQL, Bash</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, React, Flask, Bootstrap, Node.js, Express</p>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <p>MongoDB, MySQL</p>
+            </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <p>Scikit-learn, Pandas, NumPy, OpenCV</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Frameworks</h3>
+                <p>Git, Docker, Linux, Hadoop, Selenium</p>
+            </div>
+            <div class="skill-card">
+                <h3>CS Concepts</h3>
+                <p>DSA, OS, DBMS, Networking, Compiler Design</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <!-- <img src="dried-flowers-vase-blue-wall.jpg" alt="Dried flowers in a vase"> -->
+
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>SmartTestify</h3>
+                <p>An AI-powered online test platform that analyzes PDFs, generates tests, and provides feedback.</p>
+            </div>
+            <div class="project-card">
+                <h3>CreditSea</h3>
+                <p>A finance management platform that helps users track and optimize their credit usage.</p>
+            </div>
+            <div class="project-card">
+                <h3>DSA Recommendation System</h3>
+                <p>Recommends DSA problems based on user experience using collaborative filtering.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <a href="resume.pdf" download>Download Resume</a>
+
+    </section>
+    <section id="resume-chatbot">
+        <h2>Resume Chatbot</h2>
+        <div class="chatbot-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask me about my resume...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/your-github-profile" target="_blank">GitHub</a>
+        <a href="mailto:your-email@example.com">Email</a>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
